@@ -72,9 +72,10 @@ There is also a small list of banned terms (clinical-syndrome words that the pro
 | `index.html` | Landing page | — |
 | `privacy.html` | Privacy policy | App Store mandatory URL |
 | `terms.html` | Terms of use | App Store subscription mandatory URL |
-| `methodology.html` | Four assays + scoring + calibration miss | Linked from in-app Settings |
 | `support.html` | Contact + FAQ + crisis line | Linked from in-app Settings |
 | `404.html` | Branded fallback | GitHub Pages serves on misses |
+
+A `methodology.html` page was deferred from v1: the construct, scoring, and limitations need more work before they hold up to public scrutiny. Will return in a later release.
 
 Each page shares a manually-duplicated `<header class="site">` and `<footer class="fineprint">` block — no template engine. When the footer changes, change all 6 files.
 
