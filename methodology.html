@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Methodology · Atrophy</title>
+  <meta name="description" content="What the four assays measure, how the index is computed, and what the calibration miss is supposed to mean.">
+  <meta name="theme-color" content="#F4F5F7">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preload" href="assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+  <main class="page">
+    <header class="site">
+      <a href="index.html" class="wordmark">atrophy</a>
+      <nav class="site-nav">
+        <a href="methodology.html" class="current">Methodology</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </header>
+
+    <p class="eyebrow">Methodology</p>
+    <h1>What the four assays actually measure.</h1>
+    <p class="lede">A short, honest description of how the index is computed, what the calibration miss is, and what this whole thing is and is not.</p>
+
+    <h2>The construct</h2>
+    <p>The thing Atrophy measures is not "AI use." Many calibrated heavy users of large language models retain full unaided performance and are well aware of when their output is theirs and when it isn't. The thing the app actually measures is the <em>gap between confidence and unaided output quality</em> — the metacognitive miscalibration that the cognitive-science literature identifies as the engine of skill atrophy.</p>
+    <p>That construct is operationalized as a single 0-100 number — the "atrophy index" — and a separate "calibration miss" value that reports how far off the user's prediction of their own score was from the measured score.</p>
+
+    <h2>The four assays</h2>
+
+    <h3>Assay 01 · Turing acuity</h3>
+    <p>Six short prose samples; the user swipes left for "human" or right for "AI." The AI samples deliberately contain stylistic markers identified in published corpus analyses of LLM-generated text — words like <em>delve</em>, <em>showcasing</em>, <em>underscores</em>, and constructions like "it's important to note." The number of incorrect identifications becomes the Turing-acuity sub-index (higher = worse calibration to the difference between machine and human prose).</p>
+
+    <h3>Assay 02 · Latency &amp; fluency</h3>
+    <p>Three sentence stems with an 18-second timer each; the user finishes the sentence under time pressure. Word count and time-to-first-word are the signals; lower fluency under pressure is the deficit signal.</p>
+
+    <h3>Assay 03 · Self-report</h3>
+    <p>Four symptom items rated on a 5-point scale, anchored to specific findings in the dependence literature (the "I open the model before I have read the task" item maps to reflexive offloading; "I cannot quote what I just wrote" maps to a finding from a 2025 lab study on recall after LLM-assisted writing; etc.). The total normalized to 0-100 becomes the symptom-load sub-index.</p>
+    <p>This is the weakest assay by design. Self-report systematically under-detects in the most affected — that is the structural feature of the phenomenon, not a bug. We include it because mid-spiral users do reliably notice and report drift in themselves; the deepest cases simply don't.</p>
+
+    <h3>Assay 04 · Unaided prose</h3>
+    <p>One free-write prompt with a 60-second timer. The text is scored on three dimensions: word count (deficit signal), em-dash density (a stylistic marker the literature flags as LLM-residue), and frequency of specific lexical markers from the same corpus analyses. The blended result is the LLM-stylistic-residue sub-index.</p>
+
+    <h2>The calibration miss</h2>
+    <p>Before the unaided free-write begins, the app asks the user to predict their final score on a 0-100 slider. The absolute difference between this prediction and the computed atrophy index is reported on the result screen as the <strong>calibration miss</strong> (Δ).</p>
+    <p>This number is treated as a co-equal finding alongside the index itself. A user who scores 70 on the index but predicted 70 has accurate self-knowledge — high atrophy, but calibrated. A user who scores 70 and predicted 25 has both elevated atrophy <em>and</em> a substantial calibration deficit. The research suggests the second pattern is the load-bearing one.</p>
+
+    <h2>Scoring weights</h2>
+    <p>The four sub-indices are weighted equally — 25 percent each — and averaged to produce the atrophy index. This is a deliberate simplification: there is no published correlation matrix between the four signals at the time of writing, so we don't pretend to know which deserves more weight. If validated weights become available, future versions will adopt them.</p>
+
+    <h2>The five tiers</h2>
+    <p>The 0-100 index is binned into five tiers. The tier boundaries and labels are research-grounded constructs, not clinical categories:</p>
+    <table>
+      <thead>
+        <tr><th>Tier</th><th>Range</th><th>Label</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>I</td><td>0-19</td><td>Calibrated</td></tr>
+        <tr><td>II</td><td>20-39</td><td>Reflexive offloading</td></tr>
+        <tr><td>III</td><td>40-59</td><td>Fluency illusion</td></tr>
+        <tr><td>IV</td><td>60-79</td><td>Cognitive deskilling</td></tr>
+        <tr><td>V</td><td>80-100</td><td>Relay dependence</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Limitations</h2>
+    <div class="callout">
+      <p class="eyebrow">Read this carefully</p>
+      <ul>
+        <li>This is not a validated clinical instrument. There is no published validity or reliability data for the atrophy index. We are not pretending otherwise.</li>
+        <li>The four assays are quick, screen-based, and self-administered. They cannot replace observation by a colleague, peer review of your output, or a comparison of your assisted vs unassisted work product over time.</li>
+        <li>The deepest cases of dependence will likely score themselves <em>better</em> than they actually are, because metacognitive miscalibration is the symptom. The app's strongest signal — the calibration miss — exists specifically to flag this, but it cannot fully correct for it.</li>
+        <li>Heavy AI use is not, by itself, the construct being measured. Many calibrated heavy users will score in tier I.</li>
+      </ul>
+    </div>
+
+    <h2>Sources</h2>
+    <p>The construct draws on convergent findings across cognitive offloading (Risko &amp; Gilbert), automation bias (Parasuraman &amp; Manzey), the fluency illusion (Bjork), and recent LLM-specific empirical work (the Microsoft/CMU 2025 critical-thinking study, the Bedford-archetype reporting in <em>The Atlantic</em>'s December 2025 piece, and corpus-level stylistic analyses by Liang et al. 2025 and Kobak et al. 2024). A fuller bibliography is in development and will live on this page in a later update.</p>
+
+    <footer class="fineprint">
+      <div class="disclaimer">Not a clinical diagnosis · Not medical advice</div>
+      <div class="crisis-line">
+        In distress? Contact <a href="tel:988">988</a> (US Suicide &amp; Crisis Lifeline) or your local crisis service. This app is not a clinical tool.
+      </div>
+      <div class="nav-row">
+        <nav>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="methodology.html">Methodology</a>
+          <a href="support.html">Support</a>
+        </nav>
+        <span class="meta">© 2026 Atrophy · v1.0 · Updated 2026-04-27</span>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
