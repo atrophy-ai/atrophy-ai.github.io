@@ -1,5 +1,5 @@
 /* atrophy-site — single stylesheet
- * Mirrors atrophy-cc/Atrophy/Theme/AtrophyTheme.swift (bone palette, Tiffany accent).
+ * Mirrors the iOS app's AtrophyTheme.swift bone palette (Tiffany accent).
  * No third-party CDN. No JS. No tracking. Light theme only in v1.
  */
 
@@ -51,7 +51,7 @@
   src: url("../fonts/GeistMono-Regular.woff2") format("woff2");
 }
 
-/* ───────── Tokens — must match atrophy-cc bone palette ───────── */
+/* ───────── Tokens — must match the iOS app's bone palette ───────── */
 :root {
   --bg:         #F4F5F7;
   --bg-deep:    #E8EAEE;

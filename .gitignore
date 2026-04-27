@@ -1,0 +1,52 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Icon?
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# AI tooling — local agent state, caches, transcripts
+.claude/
+.claude.json
+.claude.local.json
+CLAUDE.local.md
+.aider*
+.cursor/
+.cursorrules
+.continue/
+.windsurf/
+.specstory/
+.codeium/
+.zed/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Jekyll build output (we ship with .nojekyll, but don't commit it if anyone runs jekyll locally)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Node / build artifacts (we don't have a build step, but cheap insurance)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Local dev server logs
+*.log
+
+# Mac thumbnails
+.thumbs/
