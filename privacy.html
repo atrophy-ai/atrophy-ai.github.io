@@ -1,89 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy · Atrophy</title>
-  <meta name="description" content="Atrophy's privacy policy. Plain English: we collect nothing.">
-  <meta name="theme-color" content="#F4F5F7">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preload" href="assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin>
-</head>
-<body>
-  <main class="page">
-    <header class="site">
-      <a href="index.html" class="wordmark">atrophy</a>
-      <nav class="site-nav">
-        <a href="privacy.html" class="current">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="support.html">Support</a>
-      </nav>
-    </header>
-
-    <p class="eyebrow">Privacy policy · Effective 2026-04-27</p>
-    <h1>We collect nothing.</h1>
-    <p class="lede">A short, honest privacy policy for an app that doesn't have any data to be careless with.</p>
-
-    <div class="callout accent">
-      <p class="eyebrow">Plain English</p>
-      <p>Atrophy runs entirely on your iPhone. It has no servers, no analytics, no third-party SDKs, no tracking. The only network calls it makes are to Apple's StoreKit when you subscribe, restore a purchase, or check your subscription status. That's it.</p>
-    </div>
-
-    <h2>What stays on your device</h2>
-    <p>Atrophy stores two things in your iPhone's local app storage (Apple's <code>UserDefaults</code> system):</p>
-    <dl>
-      <dt>Treatment enrollment date</dt>
-      <dd>The date you first opened the recovery program, used to compute "Day N of the program." Stored under the key <code>atr.enrolledAt</code>. Never leaves your device.</dd>
-      <dt>Lifetime-waitlist email (only if you provide one)</dt>
-      <dd>If you tap "Join the lifetime waitlist" and enter an email, that email is stored under <code>atr.waitlistEmail</code>. In v1.0 it is stored locally only — there is no server to send it to. Once the lifetime tier is priced and we have a way to email you, we will ask for your email again. You can clear this at any time by reinstalling the app or signing out from Settings.</dd>
-    </dl>
-
-    <p>That's everything. Your assessment results, your written responses, your scores, your prediction-vs-measurement gap — none of these leave your device, and they reset every cold launch by design.</p>
-
-    <h2>What leaves your device</h2>
-    <p>The only outbound network calls Atrophy makes are to <strong>Apple's StoreKit</strong>:</p>
-    <ul>
-      <li>Fetching the price and availability of the monthly and annual subscriptions.</li>
-      <li>Initiating a purchase when you tap "Begin treatment."</li>
-      <li>Verifying your active subscription on app launch ("Restore purchases").</li>
-    </ul>
-    <p>These calls are governed by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's privacy policy</a>. Atrophy never sees your Apple ID, your payment method, or any personal billing information — Apple handles all of it and tells us only whether you have an active subscription.</p>
-
-    <h2>What we don't do</h2>
-    <ul>
-      <li>No analytics. No PostHog, Mixpanel, Amplitude, Google Analytics, or anything similar.</li>
-      <li>No crash reporting beyond Apple's optional, opt-in TestFlight diagnostics.</li>
-      <li>No third-party SDKs. The only external library in v1 is Yams (a YAML parser, used to load the diagnostic content from a bundled file). It does not make network calls.</li>
-      <li>No advertising identifiers. No App Tracking Transparency prompt, because there's nothing to track.</li>
-      <li>No social sign-in. No accounts. No login.</li>
-      <li>No fingerprinting, no device identifiers, no IP-based geolocation.</li>
-    </ul>
-
-    <h2>Children</h2>
-    <p>Atrophy is intended for adult knowledge workers. It is not directed at children under 13, does not knowingly collect anything from anyone, and is age-gated 12+ in the App Store age rating because it discusses mental-health-adjacent topics in a clinical-deadpan tone.</p>
-
-    <h2>Changes to this policy</h2>
-    <p>If we ever start collecting data — for example, if a future version syncs your assessment history to iCloud, or sends anonymized aggregate statistics to a server — this page will be updated and the change will be flagged in the app's release notes before the new behavior ships. We will not retroactively start collecting data from existing users without their explicit consent.</p>
-
-    <h2>Contact</h2>
-    <p>Questions about this policy: <a href="support.html">support page</a>.</p>
-
-    <footer class="fineprint">
-      <div class="disclaimer">Not a clinical diagnosis · Not medical advice</div>
-      <div class="crisis-line">
-        In distress? Contact <a href="tel:988">988</a> (US Suicide &amp; Crisis Lifeline) or your local crisis service. This app is not a clinical tool.
-      </div>
-      <div class="nav-row">
-        <nav>
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="support.html">Support</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>privacy · atrophy</title>
+    <meta name="description" content="atrophy's privacy policy. plain english: we collect almost nothing." />
+    <meta name="theme-color" content="#F4F5F7" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preload" href="assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body>
+    <main class="page">
+      <header class="site">
+        <a href="index.html" class="wordmark">atrophy</a>
+        <nav class="site-nav">
+          <a href="privacy.html" class="current">privacy</a>
+          <a href="terms.html">terms</a>
+          <a href="support.html">support</a>
         </nav>
-        <span class="meta">© 2026 Atrophy · v1.0 · Updated 2026-04-27</span>
+      </header>
+
+      <p class="eyebrow">privacy policy · effective 2026-04-27</p>
+      <h1>we collect basically nothing.</h1>
+      <p class="lede">
+        a short privacy policy for an app that is trying very hard not to have your data in the first place.
+      </p>
+
+      <div class="callout accent">
+        <p class="eyebrow">plain english</p>
+        <p>
+          atrophy runs on your iphone. no servers, no analytics, no third-party sdks, no tracking. the only network
+          calls it makes are to apple's storekit when you subscribe, restore a purchase, or check your subscription
+          status. that's it.
+        </p>
       </div>
-    </footer>
-  </main>
-</body>
+
+      <h2>what stays on your device</h2>
+      <p>atrophy stores two things in your iphone's local app storage:</p>
+      <dl>
+        <dt>recovery enrollment date</dt>
+        <dd>
+          the date you first opened the recovery program, used to compute "day n of the program." it never leaves your
+          device.
+        </dd>
+        <dt>lifetime-waitlist email, if you add one</dt>
+        <dd>
+          if you tap "join the lifetime waitlist" and enter an email, that email is stored locally only. in v1.0, there
+          is no server to send it to. once the lifetime tier is priced and we have a way to email you, we will ask for
+          your email again. you can clear this at any time by reinstalling the app or signing out from settings.
+        </dd>
+      </dl>
+
+      <p>
+        that's the list. your assessment results, written responses, scores, and prediction-vs-measurement gap do not
+        leave your device, and they reset every cold launch by design.
+      </p>
+
+      <h2>what leaves your device</h2>
+      <p>the only outbound network calls atrophy makes are to <strong>apple's storekit</strong>:</p>
+      <ul>
+        <li>fetching the price and availability of the monthly and annual subscriptions.</li>
+        <li>starting a purchase when you tap "begin recovery."</li>
+        <li>checking your active subscription on app launch, or when you tap "restore purchases."</li>
+      </ul>
+      <p>
+        these calls are governed by
+        <a href="https://www.apple.com/legal/privacy/" rel="noopener">apple's privacy policy</a>. atrophy never sees
+        your apple id, payment method, or personal billing information. apple handles all of that and only tells the app
+        whether you have an active subscription.
+      </p>
+
+      <h2>what we don't do</h2>
+      <ul>
+        <li>no analytics. no posthog, mixpanel, amplitude, google analytics, or anything like that.</li>
+        <li>no crash reporting beyond apple's optional, opt-in testflight diagnostics.</li>
+        <li>
+          no third-party sdks. the only external library in v1 is yams, a yaml parser used to load bundled app content.
+          it does not make network calls.
+        </li>
+        <li>no advertising identifiers. no app tracking transparency prompt, because there is nothing to track.</li>
+        <li>no social sign-in. no accounts. no login.</li>
+        <li>no fingerprinting, no device identifiers, no ip-based geolocation.</li>
+      </ul>
+
+      <h2>children</h2>
+      <p>
+        atrophy is intended for adult knowledge workers. it is not directed at children under 13 and does not knowingly
+        collect anything from anyone.
+      </p>
+
+      <h2>changes to this policy</h2>
+      <p>
+        if we ever start collecting data, like syncing assessment history to icloud or sending anonymous aggregate stats
+        to a server, this page will be updated and the change will be called out in the app's release notes before it
+        ships. we will not quietly turn on data collection for existing users.
+      </p>
+
+      <h2>contact</h2>
+      <p>questions about this policy: <a href="support.html">support page</a>.</p>
+
+      <footer class="fineprint">
+        <div class="disclaimer">self-awareness only · not a diagnosis</div>
+        <div class="nav-row">
+          <nav>
+            <a href="privacy.html">privacy</a>
+            <a href="terms.html">terms</a>
+            <a href="support.html">support</a>
+          </nav>
+          <span class="meta">© 2026 atrophy · v1.0 · updated 2026</span>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>

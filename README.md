@@ -1,6 +1,6 @@
 # atrophy-site
 
-Static marketing + policy website for the [Atrophy iOS app](https://github.com/atrophy-ai/atrophy-ios).
+Static marketing + policy website for the Atrophy iOS app.
 
 - Plain HTML + CSS, **no JS**, no build step, no third-party CDN.
 - Self-host fonts (Source Serif 4, Geist, Geist Mono) via woff2 in `assets/fonts/`.
@@ -58,12 +58,11 @@ The CSS token block in `assets/css/style.css` mirrors the bone palette in the iO
 
 ## Locked copy
 
-These strings appear on every page footer and are brand-locked. Do not paraphrase:
+This string appears on every page footer and is brand-locked. Do not paraphrase:
 
-- `Not a clinical diagnosis · Not medical advice`
-- `In distress? Contact 988 (US Suicide & Crisis Lifeline) or your local crisis service. This app is not a clinical tool.`
+- `self-awareness only · not a diagnosis`
 
-There is also a small list of banned terms (clinical-syndrome words that the project explicitly avoids). The list lives in the iOS app's internal design notes, not in this repo. Before merging copy changes, sanity-grep against that list.
+There is also a small list of banned terms that the project explicitly avoids. The list lives in the iOS app's internal design notes, not in this repo. Before merging copy changes, sanity-grep against that list.
 
 ## Pages
 
@@ -72,7 +71,7 @@ There is also a small list of banned terms (clinical-syndrome words that the pro
 | `index.html` | Landing page | — |
 | `privacy.html` | Privacy policy | App Store mandatory URL |
 | `terms.html` | Terms of use | App Store subscription mandatory URL |
-| `support.html` | Contact + FAQ + crisis line | Linked from in-app Settings |
+| `support.html` | Contact + FAQ | Linked from in-app Settings |
 | `404.html` | Branded fallback | GitHub Pages serves on misses |
 
 A `methodology.html` page was deferred from v1: the construct, scoring, and limitations need more work before they hold up to public scrutiny. Will return in a later release.

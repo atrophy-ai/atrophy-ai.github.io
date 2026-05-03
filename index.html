@@ -1,87 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Atrophy — a diagnostic instrument for cognitive offloading</title>
-  <meta name="description" content="A diagnostic instrument for the gradual outsourcing of human cognition to large language models. iOS app. Not a clinical diagnosis.">
-  <meta name="theme-color" content="#F4F5F7">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preload" href="assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/Geist-Regular.woff2" as="font" type="font/woff2" crossorigin>
-</head>
-<body>
-  <main class="page">
-    <header class="site">
-      <a href="index.html" class="wordmark">atrophy</a>
-      <nav class="site-nav">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="support.html">Support</a>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <p class="eyebrow">Form AX-001 · Rev. 04 / 2026</p>
-      <h1>A diagnostic instrument for the gradual outsourcing of human cognition to large language models.</h1>
-      <p class="lede">Four short assays. A measured atrophy index. A calibration check the chatbot can't help you fudge.</p>
-      <div class="actions">
-        <span class="pill outline">Coming soon to the App Store</span>
-      </div>
-    </section>
-
-    <hr class="rule">
-
-    <section>
-      <p class="eyebrow">What it is</p>
-      <p>A self-administered iPhone diagnostic for knowledge workers who suspect they have begun to think in the cadence of a model. Five minutes. No account. No data leaves your device. The app returns a 0–100 index, a tier diagnosis, and — most importantly — a Calibration Miss: the gap between what you said about yourself going in and what the writing actually showed.</p>
-      <p>If the index is elevated and you want to do something about it, treatment is a 7- to 60-day program of paper-only writing exercises. No AI tutor. No streaks. No leaderboard. No "you're crushing it." Just one prescription per day until you remember what your unaided draft used to feel like.</p>
-    </section>
-
-    <section>
-      <p class="eyebrow">What it is not</p>
-      <ul>
-        <li><strong>Not a chatbot.</strong> There is no conversational AI inside the app. <em>We do not give you a chatbot. That is the entire point.</em></li>
-        <li><strong>Not a clinical diagnosis.</strong> The brand is medical-deadpan; the math is not. The atrophy index has no validated clinical referent. We say so on every result screen.</li>
-        <li><strong>Not a tracker.</strong> No analytics SDK. No remote server. No third-party requests. <a href="privacy.html">See the privacy policy</a> — it is short and accurate.</li>
-        <li><strong>Not free forever.</strong> The diagnostic is yours to keep. Treatment is $5/month or $45/year. <a href="terms.html">Terms.</a></li>
-      </ul>
-    </section>
-
-    <hr class="rule">
-
-    <section>
-      <p class="eyebrow">The construct, briefly</p>
-      <p>The thing the app measures is not "AI use." Many calibrated heavy users of large language models retain full unaided performance and remain aware of when their output is theirs and when it isn't. The construct is the <em>decoupling of confidence from output quality</em> — the metacognitive miscalibration that the cognitive-science literature treats as the engine of skill atrophy. Polished output reads to the writer as evidence of competence, even when verification has quietly stopped happening. The longer this goes on, the harder it gets to write a bad first draft on purpose.</p>
-    </section>
-
-    <hr class="rule">
-
-    <section>
-      <p class="eyebrow">Read more</p>
-      <ul>
-        <li><a href="privacy.html">Privacy</a> — what we store (almost nothing) and what leaves your device (almost never anything).</li>
-        <li><a href="terms.html">Terms of use</a> — subscription, refunds, and what happens if you stop paying.</li>
-        <li><a href="support.html">Support</a> — how to reach the developer when the app misbehaves.</li>
-      </ul>
-    </section>
-
-    <footer class="fineprint">
-      <div class="disclaimer">Not a clinical diagnosis · Not medical advice</div>
-      <div class="crisis-line">
-        In distress? Contact <a href="tel:988">988</a> (US Suicide &amp; Crisis Lifeline) or your local crisis service. This app is not a clinical tool.
-      </div>
-      <div class="nav-row">
-        <nav>
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="support.html">Support</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>atrophy — a small gut check for ai autopilot</title>
+    <meta
+      name="description"
+      content="a small gut check for noticing when ai starts doing more of your thinking than you meant it to. ios app. not a diagnosis."
+    />
+    <meta name="theme-color" content="#F4F5F7" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preload" href="assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/Geist-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body>
+    <main class="page">
+      <header class="site">
+        <a href="index.html" class="wordmark">atrophy</a>
+        <nav class="site-nav">
+          <a href="privacy.html">privacy</a>
+          <a href="terms.html">terms</a>
+          <a href="support.html">support</a>
         </nav>
-        <span class="meta">© 2026 Atrophy · v1.0 · Updated 2026-04-27</span>
-      </div>
-    </footer>
-  </main>
-</body>
+      </header>
+
+      <section class="hero">
+        <p class="eyebrow">form ax-001 · rev. 04 / 2026</p>
+        <h1>a small gut check for noticing when ai starts doing too much of your thinking.</h1>
+        <p class="lede">
+          four short checks. one atrophy index. a calibration miss the chatbot cannot smooth over for you.
+        </p>
+        <div class="actions">
+          <span class="pill outline">coming soon to the app store</span>
+        </div>
+      </section>
+
+      <hr class="rule" />
+
+      <section>
+        <p class="eyebrow">what it is</p>
+        <p>
+          a self-check for knowledge workers who suspect they have started thinking in the cadence of a model. five
+          minutes. no account. no cloud mystery. the app gives you a 0–100 index, a tier, and the important bit: a
+          calibration miss, which is the gap between how sharp you thought you were and what your unaided writing
+          actually showed.
+        </p>
+        <p>
+          if the index is high and you want to do something about it, the recovery plan is a 7- to 60-day run of
+          paper-first writing exercises. no ai tutor, no streaks, no leaderboard, no forced hype. just one small
+          prescription per day until your first draft starts feeling like yours again.
+        </p>
+      </section>
+
+      <section>
+        <p class="eyebrow">what it is not</p>
+        <ul>
+          <li>
+            <strong>not a chatbot.</strong> there is no conversational ai inside the app.
+            <em>we do not give you a chatbot. that is the whole point.</em>
+          </li>
+          <li>
+            <strong>not a diagnosis.</strong> the app uses assessment-style language, but the atrophy index is just an
+            app score. we say that on every result screen.
+          </li>
+          <li>
+            <strong>not a tracker.</strong> no analytics sdk. no remote server. no third-party requests.
+            <a href="privacy.html">see the privacy policy</a>. it is short on purpose.
+          </li>
+          <li>
+            <strong>not free forever.</strong> the assessment is yours to keep. recovery is $5/month or $45/year.
+            <a href="terms.html">terms.</a>
+          </li>
+        </ul>
+      </section>
+
+      <hr class="rule" />
+
+      <section>
+        <p class="eyebrow">the idea, briefly</p>
+        <p>
+          the app is not measuring "ai use." plenty of heavy ai users are calibrated, careful, and still fully capable
+          without it. the thing we care about is the drift between confidence and output quality: that weird moment when
+          polished text starts feeling like proof you still have the skill, even though the checking has quietly gone
+          missing. the longer that loop runs, the harder it gets to write a messy first draft on purpose.
+        </p>
+      </section>
+
+      <hr class="rule" />
+
+      <section>
+        <p class="eyebrow">read more</p>
+        <ul>
+          <li><a href="privacy.html">privacy</a> — what we store, which is very close to nothing.</li>
+          <li><a href="terms.html">terms of use</a> — subscriptions, refunds, and the boring-but-necessary parts.</li>
+          <li><a href="support.html">support</a> — how to reach the person building this thing.</li>
+        </ul>
+      </section>
+
+      <footer class="fineprint">
+        <div class="disclaimer">self-awareness only · not a diagnosis</div>
+        <div class="nav-row">
+          <nav>
+            <a href="privacy.html">privacy</a>
+            <a href="terms.html">terms</a>
+            <a href="support.html">support</a>
+          </nav>
+          <span class="meta">© 2026 atrophy · v1.0 · updated 2026</span>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>

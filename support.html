@@ -1,89 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support · Atrophy</title>
-  <meta name="description" content="Get in touch about Atrophy. Subscriptions, restore purchases, accessibility, and how to reach us.">
-  <meta name="theme-color" content="#F4F5F7">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preload" href="assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin>
-</head>
-<body>
-  <main class="page">
-    <header class="site">
-      <a href="index.html" class="wordmark">atrophy</a>
-      <nav class="site-nav">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="support.html" class="current">Support</a>
-      </nav>
-    </header>
-
-    <p class="eyebrow">Support</p>
-    <h1>Get in touch.</h1>
-    <p class="lede">Atrophy is a one-person operation. Replies are slower than a SaaS support team, but they're written by the person who built the app.</p>
-
-    <h2>Contact</h2>
-    <dl>
-      <dt>Email</dt>
-      <dd><a href="mailto:atrophy.app@gmail.com">atrophy.app@gmail.com</a> — primary channel. Response time: 1-3 business days.</dd>
-      <dt>Bug reports</dt>
-      <dd>Email <a href="mailto:atrophy.app@gmail.com">atrophy.app@gmail.com</a> with the device model, iOS version, and what happened. Please avoid sending sensitive personal information.</dd>
-    </dl>
-
-    <h2>Frequently asked</h2>
-
-    <h3>How do I cancel my subscription?</h3>
-    <p>Cancellation is handled by Apple, not by us. On your iPhone: <strong>Settings → [your name] → Subscriptions → Atrophy Pro → Cancel Subscription</strong>. Or visit <a href="https://apps.apple.com/account/subscriptions" rel="noopener">apps.apple.com/account/subscriptions</a> in any browser signed into your Apple ID.</p>
-    <p>Cancellation takes effect at the end of the current billing period. Until that date you keep access to the treatment program; after, you keep access to the diagnostic.</p>
-
-    <h3>I subscribed on another device. How do I restore purchases?</h3>
-    <p>Open Atrophy on the new device, navigate to the paywall (after taking the diagnostic), and tap <strong>Restore purchases</strong> at the bottom. As long as you're signed into the same Apple ID, your active subscription will reactivate within seconds.</p>
-
-    <h3>Can I export my data?</h3>
-    <p>There is nothing to export. Atrophy stores almost nothing on your device and nothing on a server. Each diagnostic resets when you close the app. The treatment program tracks only your enrollment date locally. <a href="privacy.html">See the privacy policy</a> for details.</p>
-
-    <h3>I'd like a refund.</h3>
-    <p>Refunds are handled by Apple, not by us. Request one at <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>. We have no ability to issue refunds directly because we never see your payment information.</p>
-
-    <h3>Accessibility.</h3>
-    <p>Atrophy is built in native SwiftUI, which inherits VoiceOver, Dynamic Type, Reduce Motion, and the Smart Invert color modes by default. If you find a screen that doesn't respond to your accessibility settings the way you expect, please report it via the contact channels above — accessibility regressions are bugs, not edge cases.</p>
-
-    <h3>I'm a journalist / researcher / clinician.</h3>
-    <p>The full research synthesis — convergent literatures, citations, and the anti-claims we explicitly avoid — is available on request. Email and we'll send it. A public methodology page is in development for a later release.</p>
-
-    <h3>Why won't you put a chatbot in the app?</h3>
-    <p>That is the entire point. Atrophy exists to give knowledge workers a five-minute window without one. If we shipped an AI helper, we'd be cosplaying as the problem.</p>
-
-    <h2>Crisis</h2>
-    <div class="crisis">
-      <p class="eyebrow">If you are in distress</p>
-      <p>Atrophy is not a clinical tool. If you are in mental-health distress, please contact a real crisis service:</p>
-      <ul>
-        <li><strong>United States</strong> — <a href="tel:988">988</a> (Suicide &amp; Crisis Lifeline). Call or text.</li>
-        <li><strong>United Kingdom &amp; Ireland</strong> — Samaritans, 116 123. Free.</li>
-        <li><strong>Australia</strong> — Lifeline, 13 11 14.</li>
-        <li><strong>Other countries</strong> — see the <a href="https://findahelpline.com" rel="noopener">findahelpline.com</a> directory.</li>
-      </ul>
-    </div>
-
-    <footer class="fineprint">
-      <div class="disclaimer">Not a clinical diagnosis · Not medical advice</div>
-      <div class="crisis-line">
-        In distress? Contact <a href="tel:988">988</a> (US Suicide &amp; Crisis Lifeline) or your local crisis service. This app is not a clinical tool.
-      </div>
-      <div class="nav-row">
-        <nav>
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="support.html">Support</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>support · atrophy</title>
+    <meta
+      name="description"
+      content="get in touch about atrophy. subscriptions, restore purchases, accessibility, bugs, and support."
+    />
+    <meta name="theme-color" content="#F4F5F7" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preload" href="assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body>
+    <main class="page">
+      <header class="site">
+        <a href="index.html" class="wordmark">atrophy</a>
+        <nav class="site-nav">
+          <a href="privacy.html">privacy</a>
+          <a href="terms.html">terms</a>
+          <a href="support.html" class="current">support</a>
         </nav>
-        <span class="meta">© 2026 Atrophy · v1.0 · Updated 2026-04-27</span>
-      </div>
-    </footer>
-  </main>
-</body>
+      </header>
+
+      <p class="eyebrow">support</p>
+      <h1>need a hand?</h1>
+      <p class="lede">
+        atrophy is a one-person app, so replies are not instant. they are, however, written by the person building the
+        thing.
+      </p>
+
+      <h2>contact</h2>
+      <dl>
+        <dt>email</dt>
+        <dd>
+          <a href="mailto:atrophy.app@gmail.com">atrophy.app@gmail.com</a> — best for private support. response time:
+          1-3 business days.
+        </dd>
+        <dt>public issues</dt>
+        <dd>
+          <a href="https://github.com/atrophy-ai/support/issues" rel="noopener">github.com/atrophy-ai/support/issues</a>
+          — good for bugs, feature requests, and accessibility issues that do not include private information.
+        </dd>
+      </dl>
+
+      <h2>frequently asked</h2>
+
+      <h3>how do i cancel my subscription?</h3>
+      <p>
+        apple handles cancellation, not us. on your iphone:
+        <strong>settings → [your name] → subscriptions → atrophy pro → cancel subscription</strong>. or visit
+        <a href="https://apps.apple.com/account/subscriptions" rel="noopener">apps.apple.com/account/subscriptions</a>
+        in a browser signed into your apple id.
+      </p>
+      <p>
+        cancellation takes effect at the end of the current billing period. until then, you keep access to recovery.
+        after that, you still keep the free assessment.
+      </p>
+
+      <h3>i subscribed on another device. how do i restore purchases?</h3>
+      <p>
+        open atrophy on the new device, go to the paywall after taking the assessment, and tap
+        <strong>restore purchases</strong> at the bottom. as long as you are signed into the same apple id, your active
+        subscription should come back within a few seconds.
+      </p>
+
+      <h3>can i export my data?</h3>
+      <p>
+        there is almost nothing to export. atrophy stores nearly nothing on your device and nothing on a server. each
+        assessment resets when you close the app. the recovery program only tracks your enrollment date locally.
+        <a href="privacy.html">see the privacy policy</a> for details.
+      </p>
+
+      <h3>i'd like a refund.</h3>
+      <p>
+        apple handles refunds, not us. request one at
+        <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>. we cannot issue refunds
+        directly because we never see your payment information.
+      </p>
+
+      <h3>accessibility.</h3>
+      <p>
+        atrophy is built in native swiftui, which gets voiceover, dynamic type, reduce motion, and smart invert support
+        from apple by default. if a screen does not respond to your accessibility settings the way it should, please
+        report it. accessibility regressions are bugs, full stop.
+      </p>
+
+      <h3>i'm a journalist / researcher / clinician.</h3>
+      <p>
+        the research synthesis, citations, and the claims we intentionally avoid are available on request. email and we
+        will send it. a public methodology page is planned for a later release.
+      </p>
+
+      <h3>why is there no chatbot in the app?</h3>
+      <p>
+        that is the whole point. atrophy gives knowledge workers a small window without one. adding an ai helper would
+        defeat the purpose.
+      </p>
+
+      <footer class="fineprint">
+        <div class="disclaimer">self-awareness only · not a diagnosis</div>
+        <div class="nav-row">
+          <nav>
+            <a href="privacy.html">privacy</a>
+            <a href="terms.html">terms</a>
+            <a href="support.html">support</a>
+          </nav>
+          <span class="meta">© 2026 atrophy · v1.0 · updated 2026</span>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
