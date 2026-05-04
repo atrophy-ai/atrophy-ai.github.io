@@ -56,22 +56,23 @@
         in a browser signed into your apple id.
       </p>
       <p>
-        cancellation takes effect at the end of the current billing period. until then, you keep access to recovery.
-        after that, you still keep the free assessment.
+        cancellation takes effect at the end of the current billing period. until then, you keep access to the
+        calibration drills. after that, you still keep the free diagnostic.
       </p>
 
       <h3>i subscribed on another device. how do i restore purchases?</h3>
       <p>
-        open atrophy on the new device, go to the paywall after taking the assessment, and tap
+        open atrophy on the new device, go to the paywall after taking the diagnostic, and tap
         <strong>restore purchases</strong> at the bottom. as long as you are signed into the same apple id, your active
         subscription should come back within a few seconds.
       </p>
 
       <h3>can i export my data?</h3>
       <p>
-        there is almost nothing to export. atrophy stores nearly nothing on your device and nothing on a server. each
-        assessment resets when you close the app. the recovery program only tracks your enrollment date locally.
-        <a href="privacy.html">see the privacy policy</a> for details.
+        there is almost nothing to export. atrophy stores no data on a server. on the device it keeps a small
+        diagnostic-history record under one ios userdefaults key (<code>atrophy.diagnosticHistory.v1</code>) — score,
+        tier, and timestamps for past runs. individual answers reset every cold launch by design. you can clear
+        everything by deleting and reinstalling the app. <a href="privacy.html">see the privacy policy</a> for details.
       </p>
 
       <h3>i'd like a refund.</h3>
@@ -108,7 +109,7 @@
             <a href="terms.html">terms</a>
             <a href="support.html">support</a>
           </nav>
-          <span class="meta">© 2026 atrophy · v1.0 · updated 2026</span>
+          <span class="meta">© 2026 atrophy · v1.0 · updated 2026-05-03</span>
         </div>
       </footer>
     </main>

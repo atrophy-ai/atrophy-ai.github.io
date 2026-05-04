@@ -1,0 +1,10 @@
+[tools]
+    dprint = "latest"
+
+[tasks.format]
+    description = "format html, css, md, json in place"
+    run         = "dprint fmt"
+
+[tasks."format:check"]
+    description = "verify formatting without writing"
+    run         = "dprint check"

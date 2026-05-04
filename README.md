@@ -36,14 +36,14 @@ Internal links use **document-relative paths** (`assets/css/style.css`, `privacy
 
 The CSS expects six woff2 files in `assets/fonts/`:
 
-| File | Source |
-|---|---|
+| File                         | Source                                                                                                              |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | `SourceSerif4-Regular.woff2` | [adobe-fonts/source-serif](https://github.com/adobe-fonts/source-serif), `WOFF2/TTF/SourceSerif4-Regular.ttf.woff2` |
-| `SourceSerif4-Italic.woff2` | same repo, `SourceSerif4-It.ttf.woff2` |
-| `SourceSerif4-Medium.woff2` | same repo, `SourceSerif4-Medium.ttf.woff2` |
-| `Geist-Regular.woff2` | [vercel/geist-font](https://github.com/vercel/geist-font), `Geist-Regular.woff2` |
-| `Geist-Medium.woff2` | same repo, `Geist-Medium.woff2` |
-| `GeistMono-Regular.woff2` | same repo, `GeistMono-Regular.woff2` |
+| `SourceSerif4-Italic.woff2`  | same repo, `SourceSerif4-It.ttf.woff2`                                                                              |
+| `SourceSerif4-Medium.woff2`  | same repo, `SourceSerif4-Medium.ttf.woff2`                                                                          |
+| `Geist-Regular.woff2`        | [vercel/geist-font](https://github.com/vercel/geist-font), `Geist-Regular.woff2`                                    |
+| `Geist-Medium.woff2`         | same repo, `Geist-Medium.woff2`                                                                                     |
+| `GeistMono-Regular.woff2`    | same repo, `GeistMono-Regular.woff2`                                                                                |
 
 Both font families are **SIL Open Font License 1.1**. When you drop the woff2 files into `assets/fonts/`, also commit the OFL text from each upstream repo (the OFL requires distributing the license alongside binary fonts):
 
@@ -66,13 +66,13 @@ There is also a small list of banned terms that the project explicitly avoids. T
 
 ## Pages
 
-| File | Purpose | Required by |
-|---|---|---|
-| `index.html` | Landing page | — |
-| `privacy.html` | Privacy policy | App Store mandatory URL |
-| `terms.html` | Terms of use | App Store subscription mandatory URL |
-| `support.html` | Contact + FAQ | Linked from in-app Settings |
-| `404.html` | Branded fallback | GitHub Pages serves on misses |
+| File           | Purpose          | Required by                          |
+| -------------- | ---------------- | ------------------------------------ |
+| `index.html`   | Landing page     | —                                    |
+| `privacy.html` | Privacy policy   | App Store mandatory URL              |
+| `terms.html`   | Terms of use     | App Store subscription mandatory URL |
+| `support.html` | Contact + FAQ    | Linked from in-app Settings          |
+| `404.html`     | Branded fallback | GitHub Pages serves on misses        |
 
 A `methodology.html` page was deferred from v1: the construct, scoring, and limitations need more work before they hold up to public scrutiny. Will return in a later release.
 

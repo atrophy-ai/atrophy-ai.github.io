@@ -22,7 +22,7 @@
         </nav>
       </header>
 
-      <p class="eyebrow">privacy policy · effective 2026-04-27</p>
+      <p class="eyebrow">privacy policy · effective 2026-05-03</p>
       <h1>we collect basically nothing.</h1>
       <p class="lede">
         a short privacy policy for an app that is trying very hard not to have your data in the first place.
@@ -38,31 +38,33 @@
       </div>
 
       <h2>what stays on your device</h2>
-      <p>atrophy stores two things in your iphone's local app storage:</p>
+      <p>atrophy stores one thing in your iphone's local app storage:</p>
       <dl>
-        <dt>recovery enrollment date</dt>
+        <dt>diagnostic history</dt>
         <dd>
-          the date you first opened the recovery program, used to compute "day n of the program." it never leaves your
-          device.
-        </dd>
-        <dt>lifetime-waitlist email, if you add one</dt>
-        <dd>
-          if you tap "join the lifetime waitlist" and enter an email, that email is stored locally only. in v1.0, there
-          is no server to send it to. once the lifetime tier is priced and we have a way to email you, we will ask for
-          your email again. you can clear this at any time by reinstalling the app or signing out from settings.
+          a local log of past diagnostic runs (score, tier, and timestamps), kept under the
+          <code>atrophy.diagnosticHistory.v1</code> key in iOS UserDefaults. this is what powers the in-app history
+          view. it never leaves your device. you can clear it by deleting and reinstalling the app.
         </dd>
       </dl>
 
       <p>
-        that's the list. your assessment results, written responses, scores, and prediction-vs-measurement gap do not
-        leave your device, and they reset every cold launch by design.
+        that's the list. your individual answers, written responses, and the prediction-vs-measurement gap for the
+        current run live only in memory and reset every cold launch by design. only the summary record is persisted.
+      </p>
+
+      <p>
+        if you tap the "lifetime tier" option in the paywall, the app opens your system mail composer with a prefilled
+        message addressed to <a href="mailto:atrophy.app+lifetime@gmail.com">atrophy.app+lifetime@gmail.com</a>. atrophy
+        does not store the email address you send from, and does not send anything itself — your mail provider does. if
+        you do not send the message, nothing leaves your device.
       </p>
 
       <h2>what leaves your device</h2>
       <p>the only outbound network calls atrophy makes are to <strong>apple's storekit</strong>:</p>
       <ul>
         <li>fetching the price and availability of the monthly and annual subscriptions.</li>
-        <li>starting a purchase when you tap "begin recovery."</li>
+        <li>starting a purchase when you tap "practice calibration" or another paywall action.</li>
         <li>checking your active subscription on app launch, or when you tap "restore purchases."</li>
       </ul>
       <p>
@@ -72,13 +74,26 @@
         whether you have an active subscription.
       </p>
 
+      <p>two other things leave the device only at your explicit request:</p>
+      <ul>
+        <li>
+          <strong>photo library (add-only).</strong> if you tap "save to photos" on a share card, the app writes one
+          image to your photo library using the system add-only permission. it never reads existing photos. iOS will
+          prompt you the first time.
+        </li>
+        <li>
+          <strong>mail composer.</strong> the lifetime-tier action described above hands a prefilled message to your
+          mail app. nothing is sent unless you tap send.
+        </li>
+      </ul>
+
       <h2>what we don't do</h2>
       <ul>
         <li>no analytics. no posthog, mixpanel, amplitude, google analytics, or anything like that.</li>
         <li>no crash reporting beyond apple's optional, opt-in testflight diagnostics.</li>
         <li>
-          no third-party sdks. the only external library in v1 is yams, a yaml parser used to load bundled app content.
-          it does not make network calls.
+          no third-party sdks and no third-party dependencies. the app is pure swift on top of apple's frameworks.
+          bundled content is plain JSON loaded from the app bundle.
         </li>
         <li>no advertising identifiers. no app tracking transparency prompt, because there is nothing to track.</li>
         <li>no social sign-in. no accounts. no login.</li>
@@ -109,7 +124,7 @@
             <a href="terms.html">terms</a>
             <a href="support.html">support</a>
           </nav>
-          <span class="meta">© 2026 atrophy · v1.0 · updated 2026</span>
+          <span class="meta">© 2026 atrophy · v1.0 · updated 2026-05-03</span>
         </div>
       </footer>
     </main>
