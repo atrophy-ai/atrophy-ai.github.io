@@ -25,6 +25,7 @@ CLAUDE.local.md
 .specstory/
 .codeium/
 .zed/
+.playwright-cli/
 
 # Environment / secrets
 .env
