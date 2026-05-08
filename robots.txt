@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://atrophy-ai.github.io/sitemap.xml
+Sitemap: https://atrophy.live/sitemap.xml
