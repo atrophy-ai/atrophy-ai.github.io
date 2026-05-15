@@ -14,16 +14,63 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preload" href="assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin />
     <style>
-      .ref-list { list-style: none; padding: 0; max-width: var(--measure); }
-      .ref-list > li + li { margin-top: var(--space-m); padding-top: var(--space-m); border-top: 0.5px solid var(--rule-soft); }
-      .ref-list .source { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.04em; color: var(--ink-mute); display: block; margin-bottom: 0.25rem; }
-      .ref-list h3 { margin: 0 0 0.35rem 0; font-size: 1.15rem; }
-      .ref-list p { margin: 0; color: var(--ink-soft); }
-      .clips { display: grid; grid-template-columns: 1fr; gap: var(--space-m); max-width: var(--measure); margin: var(--space-m) 0 0; padding: 0; list-style: none; }
-      .clip { margin: 0; border: 0.5px solid var(--rule); background: var(--bg-paper); border-radius: 8px; overflow: hidden; }
-      .clip img { display: block; width: 100%; height: auto; }
-      .clip figcaption { padding: var(--space-s) var(--space-m); font-family: var(--font-sans); font-size: 0.85rem; color: var(--ink-soft); border-top: 0.5px solid var(--rule-soft); }
-      .clip figcaption a { color: var(--ink); }
+      .ref-list {
+        list-style: none;
+        padding: 0;
+        max-width: var(--measure);
+      }
+      .ref-list > li + li {
+        margin-top: var(--space-m);
+        padding-top: var(--space-m);
+        border-top: 0.5px solid var(--rule-soft);
+      }
+      .ref-list .source {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        letter-spacing: 0.04em;
+        color: var(--ink-mute);
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+      .ref-list h3 {
+        margin: 0 0 0.35rem 0;
+        font-size: 1.15rem;
+      }
+      .ref-list p {
+        margin: 0;
+        color: var(--ink-soft);
+      }
+      .clips {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-m);
+        max-width: var(--measure);
+        margin: var(--space-m) 0 0;
+        padding: 0;
+        list-style: none;
+      }
+      .clip {
+        margin: 0;
+        border: 0.5px solid var(--rule);
+        background: var(--bg-paper);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .clip img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .clip figcaption {
+        padding: var(--space-s) var(--space-m);
+        font-family: var(--font-sans);
+        font-size: 0.85rem;
+        color: var(--ink-soft);
+        border-top: 0.5px solid var(--rule-soft);
+      }
+      .clip figcaption a {
+        color: var(--ink);
+      }
     </style>
   </head>
   <body>
@@ -49,7 +96,8 @@
         <p class="eyebrow">a note</p>
         <p>
           links are pointers, not endorsements. the writers below are not affiliated with atrophy and have not endorsed
-          it. if you are one of them and would like a link removed, <a href="support.html">email and we will take it down</a>.
+          it. if you are one of them and would like a link removed,
+          <a href="support.html">email and we will take it down</a>.
         </p>
       </div>
 
@@ -60,7 +108,11 @@
         <ul class="ref-list">
           <li>
             <span class="source">nooneshappy.com</span>
-            <h3><a href="https://nooneshappy.com/article/appearing-productive-in-the-workplace/" rel="noopener">appearing productive in the workplace</a></h3>
+            <h3>
+              <a href="https://nooneshappy.com/article/appearing-productive-in-the-workplace/" rel="noopener"
+                >appearing productive in the workplace</a
+              >
+            </h3>
             <p>
               on the gap between looking like you are doing the work and actually doing it — and what happens to the
               skill underneath when the loop tightens around appearance.
@@ -68,7 +120,11 @@
           </li>
           <li>
             <span class="source">koshyjohn.com</span>
-            <h3><a href="https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/" rel="noopener">ai should elevate your thinking, not replace it</a></h3>
+            <h3>
+              <a href="https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/" rel="noopener"
+                >ai should elevate your thinking, not replace it</a
+              >
+            </h3>
             <p>
               a clean statement of the version of the problem atrophy is built around: the difference between using the
               tool to think harder and using it to think less.
@@ -133,7 +189,7 @@
       </section>
 
       <footer class="fineprint">
-        <div class="disclaimer">self-awareness only · not a diagnosis</div>
+        <div class="disclaimer">· diagnosis starts with self-awareness ·</div>
         <div class="nav-row">
           <nav>
             <a href="references.html">references</a>

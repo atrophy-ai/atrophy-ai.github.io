@@ -60,7 +60,7 @@ The CSS token block in `assets/css/style.css` mirrors the bone palette in the iO
 
 This string appears on every page footer and is brand-locked. Do not paraphrase:
 
-- `self-awareness only · not a diagnosis`
+- `· diagnosis starts with self-awareness ·`
 
 There is also a small list of banned terms that the project explicitly avoids. The list lives in the iOS app's internal design notes, not in this repo. Before merging copy changes, sanity-grep against that list.
 
@@ -78,7 +78,7 @@ A `methodology.html` page was deferred from v1: the construct, scoring, and limi
 
 Each page shares a manually-duplicated `<header class="site">` and `<footer class="fineprint">` block — no template engine. When the footer changes, change all 6 files.
 
-## Notes for future-you
+## Notes
 
 ### `.nojekyll` is intentionally NOT in this repo
 
